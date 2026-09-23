@@ -39,11 +39,11 @@ Os três protótipos usam dados fictícios e funcionam sem backend. O assistente
 <p align="center"><img src="https://raw.githubusercontent.com/santozbiel-hub/santozbiel-hub/main/assets/atividade.svg" width="100%" alt="ATIVIDADE NO GITHUB"></p>
 
 <p align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=santozbiel-hub&amp;show_icons=true&amp;hide_border=true&amp;bg_color=11151e&amp;title_color=ec4899&amp;icon_color=f472b6&amp;text_color=c9d1d9&amp;hide_rank=true" width="55%" alt="Estatísticas públicas do GitHub">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=santozbiel-hub&amp;layout=compact&amp;hide_border=true&amp;bg_color=11151e&amp;title_color=ec4899&amp;text_color=c9d1d9" width="42%" alt="Linguagens dos repositórios públicos">
+<img src="https://raw.githubusercontent.com/santozbiel-hub/santozbiel-hub/main/assets/stats.svg" width="49%" alt="Estatísticas públicas do GitHub">
+<img src="https://raw.githubusercontent.com/santozbiel-hub/santozbiel-hub/main/assets/languages.svg" width="49%" alt="Linguagens dos repositórios públicos">
 </p>
-
-<p align="center"><img src="https://github-readme-activity-graph.vercel.app/graph?username=santozbiel-hub&amp;bg_color=11151e&amp;color=f9a8d4&amp;line=ec4899&amp;point=fce7f3&amp;area=true&amp;hide_border=true" width="100%" alt="Gráfico de contribuições"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/santozbiel-hub/santozbiel-hub/main/assets/streak.svg" width="100%" alt="Sequência de dias com contribuições"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/santozbiel-hub/santozbiel-hub/main/assets/activity.svg" width="100%" alt="Gráfico de contribuições nos últimos 30 dias"></p>
 
 <p align="center"><img src="https://raw.githubusercontent.com/santozbiel-hub/santozbiel-hub/main/assets/github-snake.svg" width="100%" alt="Animação das contribuições no GitHub"></p>
 
