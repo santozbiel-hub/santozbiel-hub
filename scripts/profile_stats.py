@@ -36,28 +36,28 @@ for d in reversed(tail):
     if not d["contributionCount"]: break
     current+=1
 stamp=datetime.date.today().strftime("%d/%m/%Y")
-body=text(25,37,"GitHub Stats",24,"#ec4899")
+body=text(25,37,"GitHub Stats",24,"#38bdf8")
 for i,(label,value) in enumerate([("Repositórios públicos próprios",len(repos)),("Estrelas recebidas",sum(r["stargazers_count"] for r in repos)),("Contribuições nos últimos 12 meses",cal["totalContributions"])]):
-    body+=text(25,83+i*42,label,16)+text(420,83+i*42,value,23,"#f9a8d4")
+    body+=text(25,83+i*42,label,16)+text(420,83+i*42,value,23,"#7dd3fc")
 body+=text(25,219,"Dados do GitHub · "+stamp,12,"#8b949e")
 svg("stats",500,240,body)
-body=text(25,37,"Linguagens mais usadas",24,"#ec4899")
+body=text(25,37,"Linguagens mais usadas",24,"#38bdf8")
 total=sum(langs.values()) or 1
 for i,(lang,size) in enumerate(sorted(langs.items(),key=lambda x:x[1],reverse=True)[:5]):
     y=70+i*29
-    body+=text(25,y,lang,15)+f'<rect x="150" y="{y-12}" width="{max(2,230*size/total)}" height="10" rx="5" fill="#db2777"/>'+text(400,y,f"{size/total:.1%}",14)
+    body+=text(25,y,lang,15)+f'<rect x="150" y="{y-12}" width="{max(2,230*size/total)}" height="10" rx="5" fill="#2563eb"/>'+text(400,y,f"{size/total:.1%}",14)
 body+=text(25,228,"Proporção de bytes · repositórios públicos próprios",11,"#8b949e")
 svg("languages",500,240,body)
-body=text(25,37,"Consistência",24,"#ec4899")
+body=text(25,37,"Consistência",24,"#38bdf8")
 for x,value,label in [(25,current,"dias na sequência atual"),(365,best,"melhor sequência (12 meses)"),(705,sum(d["contributionCount"]>0 for d in days),"dias ativos (12 meses)")]:
-    body+=text(x,91,value,38,"#f9a8d4")+text(x,125,label,15)
+    body+=text(x,91,value,38,"#7dd3fc")+text(x,125,label,15)
 body+=text(25,162,"Sequência atual considera hoje ou ontem como último dia ativo.",12,"#8b949e")
 svg("streak",1000,185,body)
 recent=days[-30:]
 peak=max([d["contributionCount"] for d in recent]+[1])
 points=" ".join(f"{35+i*930/max(1,len(recent)-1):.1f},{195-d['contributionCount']/peak*125:.1f}" for i,d in enumerate(recent))
-body=text(25,38,"Atividade · últimos 30 dias",24,"#ec4899")
-body+='<path d="M35 195H965" stroke="#30363d"/><polyline points="'+points+'" fill="none" stroke="#ec4899" stroke-width="3"/>'
+body=text(25,38,"Atividade · últimos 30 dias",24,"#38bdf8")
+body+='<path d="M35 195H965" stroke="#30363d"/><polyline points="'+points+'" fill="none" stroke="#38bdf8" stroke-width="3"/>'
 body+=text(35,225,recent[0]["date"],12,"#8b949e")+text(850,225,recent[-1]["date"],12,"#8b949e")
-body+=text(25,258,str(sum(d["contributionCount"] for d in recent))+" contribuições no período",14,"#f9a8d4")
+body+=text(25,258,str(sum(d["contributionCount"] for d in recent))+" contribuições no período",14,"#7dd3fc")
 svg("activity",1000,280,body)

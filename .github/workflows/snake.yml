@@ -25,7 +25,7 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            assets/github-snake.svg?color_snake=#ec4899&color_dots=#161b22,#500724,#831843,#be185d,#f472b6
+            assets/github-snake.svg?color_snake=#38bdf8&color_dots=#161b22,#172554,#1e3a8a,#1d4ed8,#60a5fa
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Salvar animação
