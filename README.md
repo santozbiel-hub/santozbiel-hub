@@ -45,9 +45,10 @@ Uso ferramentas de IA como apoio para construir e revisar projetos. Meu foco é 
 <table>
 <tr><td width="50%"><a href="https://github.com/santozbiel-hub/gestao-entregas-demo"><img src="https://raw.githubusercontent.com/santozbiel-hub/santozbiel-hub/main/assets/card-entregas.svg?v=blue-1" width="100%" alt="01 / GESTÃO DE ENTREGAS"></a></td><td width="50%"><a href="https://github.com/santozbiel-hub/inspecao-frota-demo"><img src="https://raw.githubusercontent.com/santozbiel-hub/santozbiel-hub/main/assets/card-frota.svg?v=blue-1" width="100%" alt="02 / INSPEÇÃO DE FROTA"></a></td></tr>
 <tr><td width="50%"><a href="https://github.com/santozbiel-hub/assistente-pessoal-demo"><img src="https://raw.githubusercontent.com/santozbiel-hub/santozbiel-hub/main/assets/card-assistente.svg?v=blue-1" width="100%" alt="03 / ASSISTENTE PESSOAL"></a></td><td width="50%"><a href="https://github.com/santozbiel-hub/Lista_1_VisuAlg"><img src="https://raw.githubusercontent.com/santozbiel-hub/santozbiel-hub/main/assets/card-logica.svg?v=blue-1" width="100%" alt="04 / EXERCÍCIOS DE LÓGICA"></a></td></tr>
+<tr><td width="50%"><a href="https://github.com/santozbiel-hub/gestao-estoque-portfolio"><img src="https://raw.githubusercontent.com/santozbiel-hub/santozbiel-hub/main/assets/card-estoque.svg" width="100%" alt="05 / GESTÃO DE ESTOQUE"></a></td><td width="50%">Estoque, lotes, validade e pedidos. Código de aplicação com dados demonstrativos e instruções de instalação.</td></tr>
 </table>
 
-Os três protótipos usam dados fictícios e funcionam sem backend. O assistente apresenta respostas simuladas. Os detalhes e limites estão no README de cada projeto.
+Os quatro sistemas publicados incluem código-fonte reutilizável e dados fictícios. As páginas estáticas, quando disponíveis, servem apenas para prévia visual. Entregas e frota precisam de Supabase próprio; estoque precisa de PostgreSQL; o assistente requer configuração de provedores e memória. Cada repositório descreve a instalação e o que foi testado.
 
 <p align="center"><img src="https://raw.githubusercontent.com/santozbiel-hub/santozbiel-hub/main/assets/atividade.svg?v=blue-1" width="100%" alt="ATIVIDADE NO GITHUB"></p>
 
