@@ -40,15 +40,13 @@ Uso ferramentas de IA como apoio para construir e revisar projetos. Meu foco é 
 
 <p align="center"><img src="https://raw.githubusercontent.com/santozbiel-hub/santozbiel-hub/main/assets/projetos.svg?v=blue-1" width="100%" alt="PROJETOS"></p>
 
-<p align="center">Problemas reais como ponto de partida. Dados fictícios nas demonstrações.</p>
+| Projeto público | O que explorar |
+| --- | --- |
+| [Algoritmos e VisuAlg](https://github.com/santozbiel-hub/Lista_1_VisuAlg) | Listas de lógica, fluxogramas e o desafio MedControl. |
+| [LabX · Biologia em VR](https://github.com/santozbiel-hub/Unity-Biologia) | Visão geral do laboratório acadêmico feito em Unity. |
+| [CS50 · Caderno de estudos](https://github.com/santozbiel-hub/learning-cs50) | Espaço para registrar exemplos e anotações de fundamentos. |
 
-<table>
-<tr><td width="50%"><a href="https://github.com/santozbiel-hub/gestao-entregas-demo"><img src="https://raw.githubusercontent.com/santozbiel-hub/santozbiel-hub/main/assets/card-entregas.svg?v=blue-1" width="100%" alt="01 / GESTÃO DE ENTREGAS"></a></td><td width="50%"><a href="https://github.com/santozbiel-hub/inspecao-frota-demo"><img src="https://raw.githubusercontent.com/santozbiel-hub/santozbiel-hub/main/assets/card-frota.svg?v=blue-1" width="100%" alt="02 / INSPEÇÃO DE FROTA"></a></td></tr>
-<tr><td width="50%"><a href="https://github.com/santozbiel-hub/assistente-pessoal-demo"><img src="https://raw.githubusercontent.com/santozbiel-hub/santozbiel-hub/main/assets/card-assistente.svg?v=blue-1" width="100%" alt="03 / ASSISTENTE PESSOAL"></a></td><td width="50%"><a href="https://github.com/santozbiel-hub/Lista_1_VisuAlg"><img src="https://raw.githubusercontent.com/santozbiel-hub/santozbiel-hub/main/assets/card-logica.svg?v=blue-1" width="100%" alt="04 / EXERCÍCIOS DE LÓGICA"></a></td></tr>
-<tr><td width="50%"><a href="https://github.com/santozbiel-hub/gestao-estoque-portfolio"><strong>05 / GESTÃO DE ESTOQUE</strong></a></td><td width="50%">Estoque, lotes, validade e pedidos. Código de aplicação com dados demonstrativos e instruções de instalação.</td></tr>
-</table>
-
-Os quatro sistemas publicados incluem código-fonte reutilizável e dados fictícios. As páginas estáticas, quando disponíveis, servem apenas para prévia visual. Entregas e frota precisam de Supabase próprio; estoque precisa de PostgreSQL; o assistente requer configuração de provedores e memória. Cada repositório descreve a instalação e o que foi testado.
+Também desenvolvo sistemas de entregas, inspeção de frota, estoque e um assistente pessoal.
 
 <p align="center"><img src="https://raw.githubusercontent.com/santozbiel-hub/santozbiel-hub/main/assets/atividade.svg?v=blue-1" width="100%" alt="ATIVIDADE NO GITHUB"></p>
 
@@ -72,3 +70,7 @@ Prefiro evoluir por etapas e conferir o que funciona na prática. Aqui compartil
 <p align="center">Vamos conversar sobre software, IA e ideias que merecem sair do papel.</p>
 <p align="center"><a href="https://www.linkedin.com/in/gabriel-santos-silva-7246783b6/">LinkedIn</a> · <a href="https://www.instagram.com/santoz.biel/">Instagram</a></p>
 <p align="center"><img src="https://raw.githubusercontent.com/santozbiel-hub/santozbiel-hub/main/assets/footer.svg?v=blue-1" width="100%" alt="Entender. Construir. Testar. Evoluir."></p>
+
+### Como as estatísticas são geradas
+
+[`profile_stats.py`](scripts/profile_stats.py) consulta o GitHub e grava os cartões. [`profile_metrics.py`](scripts/profile_metrics.py) recebe o calendário já carregado e calcula as sequências de contribuição sem acessar a rede.
