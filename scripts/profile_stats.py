@@ -1,5 +1,7 @@
 import os, json, urllib.request, html, datetime
 from pathlib import Path
+
+from profile_metrics import contribution_streaks
 USER = os.environ["PROFILE_USER"]
 TOKEN = os.environ["GITHUB_TOKEN"]
 OUT = Path("assets")
@@ -26,15 +28,7 @@ cal=data["data"]["user"]["contributionsCollection"]["contributionCalendar"]
 days=[d for w in cal["weeks"] for d in w["contributionDays"]]
 today=datetime.date.today().isoformat()
 days=[d for d in days if d["date"]<=today]
-best=run=0
-for d in days:
-    run=run+1 if d["contributionCount"] else 0
-    best=max(best,run)
-current=0
-tail=days[:-1] if days and days[-1]["date"]==today and days[-1]["contributionCount"]==0 else days
-for d in reversed(tail):
-    if not d["contributionCount"]: break
-    current+=1
+current, best = contribution_streaks(days, today)
 stamp=datetime.date.today().strftime("%d/%m/%Y")
 body=text(25,37,"GitHub Stats",24,"#38bdf8")
 for i,(label,value) in enumerate([("Repositórios públicos próprios",len(repos)),("Estrelas recebidas",sum(r["stargazers_count"] for r in repos)),("Contribuições nos últimos 12 meses",cal["totalContributions"])]):
